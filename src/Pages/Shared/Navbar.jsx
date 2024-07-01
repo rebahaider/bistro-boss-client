@@ -1,12 +1,11 @@
+import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
 
     const navOptions = <>
-        <li><a>Item 1</a></li>
-
-        <li><a>Item 3</a></li>
-
+        <li><NavLink to={'/'}>Home</NavLink></li>
+        <li><NavLink to={'menu'}>Menu</NavLink></li>
     </>
     return (
         <div className="navbar fixed z-10 bg-opacity-15 max-w-screen-xl text-white bg-black">
@@ -23,7 +22,7 @@ const Navbar = () => {
                     Restuarent</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 gap-6">
                     {navOptions}
                 </ul>
             </div>

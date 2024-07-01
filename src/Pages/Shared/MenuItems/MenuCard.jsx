@@ -2,7 +2,7 @@ const MenuCard = ({ item }) => {
     const { name, recipe, image, price } = item;
     console.log(image);
     return (
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 mt-12">
             <img className="w-[100px] h-[100px] rounded-tr-full rounded-br-full rounded-bl-full" src={image} alt="" />
             <div>
                 <h3 className="text-xl uppercase">{name}------------</h3>
